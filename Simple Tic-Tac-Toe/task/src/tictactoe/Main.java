@@ -15,7 +15,7 @@ public class Main {
 class Game {
     Scanner scanner = new Scanner(System.in);
     Printer print = new Printer();
-    private int[][] game = new int[3][3];
+    private final int[][] game = new int[3][3];
     int player = 1;
     
     public int[][] fetch() {
@@ -74,7 +74,6 @@ class Printer {
     
     public void board(int[][] game) {
         System.out.println("---------");
-        int increment = 0;
         int value;
         char mark;
         for (int i = 1; i < 4; i++) {
